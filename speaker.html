@@ -1,0 +1,103 @@
+<html>
+<head>
+	<link rel="stylesheet" href="stylesheet.css" />
+
+	<script>
+	jQuery(document).ready(function() {
+    jQuery('.tabs .tab-links a').on('click', function(e)  {
+        var currentAttrValue = jQuery(this).attr('href');
+ 
+        // Show/Hide Tabs
+        jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+ 
+        // Change/remove current tab to active
+        jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+ 
+        e.preventDefault();
+	    });
+	});
+	</script>
+</head>
+<body>
+
+
+
+	<div id="header">
+       <div class="logo">
+            <a href="#"><img src="logo.png"></a>
+       </div>
+       <div id="utilContainer"> 
+			<div id="utilityLinks"> 
+				<a href="">Home</a>
+					| <a href="">Account</a>
+					| <a href="">Logout</a>
+
+			</div> 
+			<form id="globalSearch" action="http://www.google.com" method="get"> 
+				<div id="search"> 
+					<input type="text" name="q" id="Search" value="" placeholder="search here" />
+					<input type="submit" name="s" id="s" title="Search Button" value="search" /> 
+				</div> 
+			</form> 
+		</div> 
+
+	</div><!-- the end of header-->
+
+
+	<!-- this is containner  -->
+	<div class = "container">
+
+		<!-- this is sidebar -->
+		<div class = "sidebar">
+			
+		</div>
+		<!-- the end of sidebar -->
+
+		<!-- this is user info bar on right side -->
+		<div class = "user_info">
+		</div>
+		<!-- the end of user info -->
+
+		<!-- this is tab box -->
+		<div class="tabs">
+		    <ul class="tab-links">
+		        <li class="active"><a href="#tab1">Upload File</a></li>
+		        <li><a href="#tab2">Schedule</a></li>
+		        
+		    </ul>
+		<!-- this is tab_1 -->
+		    <div class="tab-content">
+		        <div id="tab1" class="tab active">
+		            <p>Tab #1 content goes here!</p>
+		            <form method="post" action="file-upload-1.htm" name="submit" enctype="multipart/form-data">
+		            	<input type="file" name="fileField"><br /><br />
+						<input type="submit" name="submit" value="Submit">
+					</form>
+		        </div><!-- the end of tab_1 -->
+		<!-- this is tab_2 -->	
+		        <div id="tab2" class="tab">
+		            <p>Tab #2 content goes here!</p>
+		            <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis. In hac habitasse platea dictumst. Ut euismod tempus hendrerit. Morbi ut adipiscing nisi. Etiam rutrum sodales gravida! Aliquam tellus orci, iaculis vel.</p>
+		        </div><!-- the end of tab_2 -->	
+		    </div><!-- the end of tab-content -->	
+		</div><!-- the end of tab box -->
+
+
+	
+
+	</div> <!-- the end of container -->
+		<!-- this is footer -->
+	<div id = "footer">
+		<h4>Contact Us</h4>
+		<ul>
+			<li>Conference Team</li>
+			<li>Abilene, Texas 79601</li>
+			<li>TEL: (325)-123-1234</li>
+		</ul>
+		 <div id="copyright">Copyright &copy; 2014-2015  Conference Team.  All rights reserved.</div> 
+        </div> 
+	</div><!-- the end of footer -->
+
+
+</body>
+</html>
