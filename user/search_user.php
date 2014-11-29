@@ -1,4 +1,5 @@
 <?php
+	//searches the user with the email, if found then there is a result, if not then false
 	require_once('DBQuery.php');
 	$query = "";
 	function searchUser($email){ //bool

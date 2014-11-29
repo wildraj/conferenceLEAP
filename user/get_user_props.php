@@ -1,5 +1,5 @@
 <?php
-	//getUserProps
+	//gets a user property with requested email and column(id, role, etc)
 	require_once('search_user.php');
 	require_once('DBQuery.php');
 	function getUserProps($email,$column){

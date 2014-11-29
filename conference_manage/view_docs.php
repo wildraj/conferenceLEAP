@@ -1,4 +1,5 @@
 <?php
+	//views a conference document with requested referece, hasn't viewed on new tab yet on browser
 	function viewDoc($reference){
 		//Fetches the file
 		error_reporting(E_ALL);

@@ -1,6 +1,7 @@
 <?php
 	require_once('DBQuery.php');
 	require_once('search_user.php');
+	//creates a new user, admin's job?
 	function insertUser($email,$fname,$lname,$pw){
 		$search_result = searchUser($email);
 		if ($search_result){

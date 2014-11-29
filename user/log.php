@@ -1,5 +1,6 @@
 <?php
 	require_once('DBQuery.php');
+	//This function searches for correct username and password, if found, then true; if not then it's invalid
 	function logInValidation($email, $pw){
 		//This query searches for the requested username with the requested password
 		$query = "SELECT * FROM user

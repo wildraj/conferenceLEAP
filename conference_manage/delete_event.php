@@ -1,6 +1,6 @@
 <?php
 	require_once('DBQuery.php');
-	//Get conf_id with the fetchConference function
+	//deletes an event with specific start and end time, and conferece id
 	function deleteEvent($start, $end, $conf_id){
 		//$query = delete event with specific start and end time, and conf_id
 		$delete = new DBQuery($query);
