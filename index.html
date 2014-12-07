@@ -22,23 +22,25 @@
 			
 		</div> 
 		<div id = "login">
-			<form method ="POST" action = "login.php">
+			<form method ="POST" action = "controllers/login.php">
 				<h1>WELCOME</h1>
 				<p>
 					<label>
-						<input type = "email" placeholder = "Email" size = "20" max = "30">
+						<input type = "email" placeholder = "Email" name="email" size = "20" max = "30">
 					</label>
 				</p>
 				<p>
 					<label>
-						<input type = "password" placeholder = "********" size = "20" max = "30">
+						<input type = "password" placeholder = "********" name="password" size = "20" max = "30">
 					</label>
 				</p>
 				<p>
-				<input class = "button" type = "submit" value = "sign in">
+				<input class = "button" type = "submit" value = "Sign In">
 				</p>
-					<a href="account_creation.html" class = "button">registration</a>
-				</p>
+				</form>
+				<form action="account_creation.html">
+					<input class = "button" type="submit" value="Create Account">
+
 				</form>
 		</div>
 		
