@@ -1,6 +1,8 @@
 <?php
-	//views a conference document with requested referece, hasn't viewed on new tab yet on browser
-	function viewDoc($reference){
+//One of the functions that fulfills editor's task: view any submitted paper
+//Grabs the paper by reference and have the editor view it
+//However it is not viewed on new tab, but on the current one
+function viewPaper($reference){
 		//Fetches the file
 		error_reporting(E_ALL);
 		ini_set('display_errors',1);
@@ -20,5 +22,5 @@
 		header('Content-Length: '.filesize($file));
 
 		readfile($file);
-	}
+}
 ?>

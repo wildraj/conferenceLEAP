@@ -1,4 +1,6 @@
 <?php
+	//COMPLETE
+	//limits role selection for certain users
 	function showRole($roleId){
 		switch ($roleID){
 			case 1:	//admin

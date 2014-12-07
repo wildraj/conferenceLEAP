@@ -2,6 +2,7 @@
 	//assume that the conf_id is posted from front end
 	//step 3 of conference registration
 	//use paypal
+	//talk to jon about this one
 	//$payment = fee - price
 	require_once('DBQuery.php');
 	require_once('get_user_props(1).php');
