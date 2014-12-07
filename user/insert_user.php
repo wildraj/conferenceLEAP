@@ -10,7 +10,7 @@
 			exit();
 		}
 		$query = "INSERT INTO user (First_Name,Last_Name,Username,password,Role)
-		VALUES ('".$fname."','".$lname."','".$email."','".$pw."','7');";
+		VALUES ('".$fname."','".$lname."','".$email."','".md5($pw)."',7);";
 		$insert = new DBQuery($query);
 		$insert->execute_query();
 		echo $email." inserted.";
