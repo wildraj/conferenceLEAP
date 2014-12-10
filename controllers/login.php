@@ -25,7 +25,7 @@
 				$_SESSION['role']=$row['role'];
 				$_SESSION['email']=$row['username'];
 				$_SESSION['user_id']=$row['id'];
-				header("Location: /homepage.html");
+				header("Location: /homepage.php");
 			}
 			else{
 				header("Location: /index.html");

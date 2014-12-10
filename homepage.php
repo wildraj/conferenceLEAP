@@ -1,4 +1,6 @@
-
+<?php
+require_once("/var/www/html/controllers/check_session.php");
+?>
 <html>
 <head>
 
