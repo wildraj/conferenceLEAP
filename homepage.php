@@ -41,18 +41,14 @@ require_once("/var/www/html/controllers/check_session.php");
             
             <div id="content_1" class="content">
 
-                	behind door 1
-
             </div>
             <div id="content_2" class="content">
 
-                	behind door 2
-
             </div>
             <div id="content_3" class="content">
-  
-                	behind door 3
- 
+                <ul>
+                <?php include_once("controllers/populatePagesTab.php");?>
+                </ul>
             </div>
         
         </div>

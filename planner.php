@@ -1,4 +1,6 @@
-
+<?php
+require_once("/var/www/html/controllers/check_session.php");
+?>
 <html>
 <head>
 
@@ -8,13 +10,13 @@
 <body>
     <div id="header">
        <div class="logo">
-            <a href="#"><img src="logo.png"></a>
+            <a href="homepage.php"><img src="logo.png"></a>
        </div>
        <div id="utilContainer"> 
             <div id="utilityLinks"> 
-                <a href="">Home</a>
+                <a href="homepage.php">Home</a>
                     | <a href="">Account</a>
-                    | <a href="">Logout</a>
+                    | <a href="controllers/logout.php">Logout</a>
 
             </div> 
             <form id="globalSearch" action="http://www.google.com" method="get"> 

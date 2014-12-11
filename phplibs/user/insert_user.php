@@ -7,7 +7,7 @@
 			echo 'Error: '.$email.' is already used. <br>';  
 			return false;
 		}
-		$query = "INSERT INTO user (first_name,last_name,email,password,role)
+		$query = "INSERT INTO user (first_name,last_name,username,password,role)
 		VALUES ('".$fname."','".$lname."','".$email."','".password_hash($pw, PASSWORD_DEFAULT)."',7);";
 		$insert = new DBQuery($query);
 		$insert->execute_query();

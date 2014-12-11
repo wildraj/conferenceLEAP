@@ -7,7 +7,7 @@
 		//This query searches for the requested username with the requested password
 		
 		$email = $_POST['email'];
-		$query = "SELECT * FROM user WHERE `email`= '".$email."';";
+		$query = "SELECT * FROM user WHERE `username`= '".$email."';";
 		$valid = new DBQuery($query);
 		$valid->execute_query();
 		$result = $valid->get_result();
@@ -24,7 +24,7 @@
 				//user's role, email, and id
 				$_SESSION['role']=$row['role'];
 				$_SESSION['email']=$row['username'];
-				$_SESSION['user_id']=$row['id'];
+				$_SESSION['userid']=$row['user_id'];
 				header("Location: /homepage.php");
 			}
 			else{

@@ -239,7 +239,6 @@ ul.tabs li a.active {
   font-size:100%;
   color:#fff;
   cursor:pointer;
-  border-radius:15px;
   transition:background .3s;
   -webkit-transition:background .3s;
 }
@@ -284,7 +283,7 @@ ul.tabs li a.active {
   height:35px;
 }
 
-#login input[type="submit"]{
+#login input[type="submit"], #login a{
   width:100%;
   background:#3399cc;
   border:0;
@@ -298,7 +297,17 @@ ul.tabs li a.active {
 }
 
 #login input[type="submit"]:hover{
-  background:#2288bb;
+  background:#2255bb;
+}
+#login a{
+	text-decoration: none;
+	padding-left:33%;
+	padding-right:33%;
+	
+}
+#login a:hover{
+	background: #2255bb;
+	text-decoration: none;
 }
 
 
